@@ -45,6 +45,13 @@ Inspired by **Stanford's CS229 (Autumn 2018)**, this repository is a hands-on jo
 - **Poisson Regression**
   - Log-link function, likelihood, and gradient updates
 
+### Gaussian Discriminant Analysis (GDA)
+  - **Linear Discriminant Analysis (LDA)** — shared covariance
+  - **Quadratic Discriminant Analysis (QDA)** — separate covariance per class
+  - Parameter estimation (φ, μ, Σ)
+  - Decision boundary visualization with contours
+  - Model persistence with `pickle`
+
 ## Structure
 
 Each algorithm’s directory contains:
@@ -52,6 +59,5 @@ Each algorithm’s directory contains:
 - Mathematical derivations / notes (Markdown or Jupyter cells)
 - From-scratch implementation (**NumPy** / **pandas** only)
 - Experiments & visualizations (**matplotlib**)
-- Sanity checks and basic benchmarks
 
 
