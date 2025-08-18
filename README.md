@@ -52,6 +52,12 @@ Inspired by **Stanford's CS229 (Autumn 2018)**, this repository is a hands-on jo
   - Decision boundary visualization with contours
   - Model persistence with `pickle`
 
+### Naive Bayes
+
+- **Multinomial Naive Bayes** (text classification setting)
+- Implementation with **Laplace smoothing**
+- Word probability estimation & class priors
+- Experiments on small text datasets (toy examples)
 ## Structure
 
 Each algorithm’s directory contains:
