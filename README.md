@@ -31,11 +31,15 @@ Inspired by **Stanford's CS229 (Autumn 2018)**, this repository is a hands-on jo
   - Newton–Raphson / IRLS (Iteratively Reweighted Least Squares)
   - Discussion of Normal Equation applicability and limitations for non-linear loss
 
+---
+
 ### Perceptron & Linear Separators
 
 - **Perceptron**
   - Perceptron Learning Algorithm (PLA)
   - Convergence behavior on linearly separable datasets
+
+---
 
 ### Generalized Linear Models (GLMs)
 
@@ -45,25 +49,46 @@ Inspired by **Stanford's CS229 (Autumn 2018)**, this repository is a hands-on jo
 - **Poisson Regression**
   - Log-link function, likelihood, and gradient updates
 
-### Gaussian Discriminant Analysis (GDA)
+---
+
+### Probabilistic Models
+
+- **Gaussian Discriminant Analysis (GDA)**
   - **Linear Discriminant Analysis (LDA)** — shared covariance
   - **Quadratic Discriminant Analysis (QDA)** — separate covariance per class
   - Parameter estimation (φ, μ, Σ)
   - Decision boundary visualization with contours
   - Model persistence with `pickle`
 
-### Naive Bayes
+- **Multinomial Naive Bayes**
+  - Laplace smoothing
+  - Word probability estimation
+  - Class prior estimation
+  - Toy text classification experiments
 
-- **Multinomial Naive Bayes** (text classification setting)
-- Implementation with **Laplace smoothing**
-- Word probability estimation & class priors
-- Experiments on small text datasets (toy examples)
+---
+
+### Unsupervised Learning
+
+- **K-Means Clustering**
+  - Lloyd's K-Means algorithm
+  - Random & **K-Means++** initialization
+  - Multiple random restarts (`n_init`)
+  - Convergence using Inertia (Objective Function)
+  - Voronoi decision boundary visualization
+  - Model persistence with `pickle`
+  - Validation against **scikit-learn**
+  - Evaluation using **Inertia**, **Adjusted Rand Index (ARI)** and **Normalized Mutual Information (NMI)**
+
+---
+
 ## Structure
 
-Each algorithm’s directory contains:
+Each algorithm's directory contains:
 
 - Mathematical derivations / notes (Markdown or Jupyter cells)
 - From-scratch implementation (**NumPy** / **pandas** only)
 - Experiments & visualizations (**matplotlib**)
+- Model saving/loading using `pickle`
 
 
